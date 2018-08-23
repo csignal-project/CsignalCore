@@ -15,14 +15,11 @@
 
 uint256 CBlockHeader::GetHash() const
 {
-    if (nTime <= LYRA2Z_TIMESTAMP) {
-        return XEVAN(BEGIN(nVersion), END(nNonce));
-    } else {
-        uint256 thash;
-        lyra2z_hash(BEGIN(nVersion), BEGIN(thash));
-        return thash;
-    }
+      uint256 thash;
 
+      lyra2z_hash(BEGIN(nVersion), BEGIN(thash));
+
+      return thash;
 
 }
 
