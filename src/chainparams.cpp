@@ -95,10 +95,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0"); // 500 block
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000090d29dc7"); // 100 block
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0"); // 500 block
+        consensus.defaultAssumeValid = uint256S("0x000000095f3a19abffd1f79b765d384a5f88ee24217ccd0a14f9b56005554adb"); // 100 block
 
         pchMessageStart[0] = 0x83;
         pchMessageStart[1] = 0x23;
@@ -146,8 +146,9 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (    0, uint256S("0x000002972f1cc99cd75123ffd2ca1dc3683490d7911f9199a5d6e5e739fa37b2")),
-            1534962946, // * UNIX timestamp of last checkpoint block
+            (    0, uint256S("0x000002972f1cc99cd75123ffd2ca1dc3683490d7911f9199a5d6e5e739fa37b2"))
+            (   10, uint256S("0x00000607ae701b33180d36b32c2fc86a58f1ede734f23786e57539ad45977e20")),
+            1535028759, // * UNIX timestamp of last checkpoint block
             0,          // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             2800        // * estimated number of transactions per day after checkpoint
