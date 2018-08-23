@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/csignal_bg.qm</file>
+        <file alias="de">locale/csignal_de.qm</file>
+        <file alias="en">locale/csignal_en.qm</file>
+        <file alias="es">locale/csignal_es.qm</file>
+        <file alias="fi">locale/csignal_fi.qm</file>
+        <file alias="fr">locale/csignal_fr.qm</file>
+        <file alias="it">locale/csignal_it.qm</file>
+        <file alias="ja">locale/csignal_ja.qm</file>
+        <file alias="pl">locale/csignal_pl.qm</file>
+        <file alias="pt">locale/csignal_pt.qm</file>
+        <file alias="ru">locale/csignal_ru.qm</file>
+        <file alias="sk">locale/csignal_sk.qm</file>
+        <file alias="sv">locale/csignal_sv.qm</file>
+        <file alias="vi">locale/csignal_vi.qm</file>
+        <file alias="zh_CN">locale/csignal_zh_CN.qm</file>
+        <file alias="zh_TW">locale/csignal_zh_TW.qm</file>
+    </qresource>
+</RCC>

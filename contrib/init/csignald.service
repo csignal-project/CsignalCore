@@ -1,0 +1,22 @@
+[Unit]
+Description=CSIGNAL's distributed currency daemon
+After=network.target
+
+[Service]
+User=csignalcore
+Group=csignalcore
+
+Type=forking
+PIDFile=/var/lib/csignald/csignald.pid
+ExecStart=/usr/bin/csignald -daemon -pid=/var/lib/csignald/csignald.pid \
+-conf=/etc/csignalcore/csignal.conf -datadir=/var/lib/csignald -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

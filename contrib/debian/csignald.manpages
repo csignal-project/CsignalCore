@@ -1,0 +1,3 @@
+debian/manpages/csignald.1
+debian/manpages/csignal.conf.5
+debian/manpages/csignal-cli.1

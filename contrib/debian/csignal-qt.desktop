@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=CSIGNAL
+Comment=CSIGNAL P2P Cryptocurrency
+Comment[fr]=CSIGNAL, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=CSIGNAL, eşten eşe kriptografik sanal para birimi
+Exec=csignal-qt %u
+Terminal=false
+Type=Application
+Icon=csignal128
+MimeType=x-scheme-handler/csignal;
+Categories=Office;Finance;

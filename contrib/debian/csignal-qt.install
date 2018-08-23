@@ -1,0 +1,6 @@
+usr/local/bin/csignal-qt usr/bin
+share/pixmaps/csignal32.xpm usr/share/pixmaps
+share/pixmaps/csignal16.xpm usr/share/pixmaps
+share/pixmaps/csignal128.png usr/share/pixmaps
+debian/csignal-qt.desktop usr/share/applications
+debian/csignal-qt.protocol usr/share/kde4/services/
